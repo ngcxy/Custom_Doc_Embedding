@@ -16,7 +16,7 @@ class CustomTokenize:
             json_data = json.load(file)
             subject_data = [entry['detail']['subject'] for entry in json_data]
             content_data = [entry['detail']['content'] for entry in json_data]
-            post_data = [f"{subject} {content}" for subject, content in zip(subject_data, content_data)]
+            post_data = [f"{subject}. {content}" for subject, content in zip(subject_data, content_data)]
             answer_data = [answer['content'] for entry in json_data if entry['type'] == 'question' for answer in
                            entry['answers']]
 

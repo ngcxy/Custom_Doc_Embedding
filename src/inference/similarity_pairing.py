@@ -28,5 +28,5 @@ while True:
 
 examples = [
     "Why DHCP server broadcasts the offer and ack frames?",
-    "Should we assign port for every server to the socket?"
+    "Should we bind port for every server(serverC, serverEE and serverCS) to the socket?"
 ]

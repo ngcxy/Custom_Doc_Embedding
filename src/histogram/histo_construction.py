@@ -9,13 +9,6 @@ import numpy as np
 
 from src.clustering.clustering import find_closest_cluster
 
-# # Tokenize the paragraph into words
-# def tokenize_paragraph(paragraph):
-#     return [
-#         [token for token in nltk.word_tokenize(sentence.lower()) if token.isalpha()]
-#         for sentence in nltk.sent_tokenize(paragraph)
-#     ]
-
 
 # Tokenize the sentence into words
 def tokenize_sentence(s):
@@ -47,6 +40,7 @@ def build_histogram(s, num_c=115):
 
 
 questions = "../../data/processed/450_question_list.json"
+
 with open(questions, "r") as file:
     question_list = json.load(file)
 
